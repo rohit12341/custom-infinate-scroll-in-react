@@ -1,0 +1,280 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 50px 15px;
+}
+
+p, h1, h2, h3, h4, span {
+    color: #444444;
+}
+.container h3.heading {
+    margin: 0;
+    padding-bottom: 40px;
+}
+.container>.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.college-description .wrapper .desc p.addr span:before {
+    content: '|';
+    padding: 0px 3px;
+}
+.college-description .wrapper .desc p.addr span:first-child:before {
+    content: '';
+    padding: 0px;
+}
+.wrapper .college {
+    border: 0.4px solid rgb(68 68 68 / 15%);
+    width: 47%;
+    border-radius: 3px;
+    margin-bottom: 80px;
+}
+.wrapper .college .college-image-wrap {
+    background-image: url(college_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 230px;
+    padding: 0px 15px;
+    position: relative;
+    min-height: 230px;
+}
+.wrapper .college .college-image-wrap:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #000000b0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrapper .college .college-image-wrap .label {
+    position: absolute;
+    top: -17px;
+    right: -1px;
+    width: 165px;
+    overflow: hidden;
+}
+.wrapper .college .college-image-wrap .label span {
+    color: #fff;
+    font-size: 16px;
+    padding: 7px 20px 7px 20px;
+    display: inline-block;
+    margin-left: 33px;
+    background: #68a7ff;
+}
+.wrapper .college .college-image-wrap .label:before {
+    content: '';
+    height: 30px;
+    width: 40px;
+    background: #68a7ff !important;
+    position: absolute;
+    transform: rotate(35deg);
+    top: -16px;
+    left: 4px;
+}
+.wrapper .college .college-image-wrap .label:after {
+    content: '';
+    height: 30px;
+    width: 40px;
+    background: #68a7ff;
+    position: absolute;
+    transform: rotate(-35deg);
+    bottom: -16px;
+    left: 4px;
+}
+.wrapper .college .college-image-wrap .rating {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    background: #f5a626;
+    border-radius: 4px;
+    text-align: center;
+    padding: 9px 9px;
+}
+.wrapper .college .college-image-wrap .rating span {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+}
+.wrapper .college .college-image-wrap .rating span strong {
+    font-size: 20px;
+}
+.tags-bar {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.tags-bar .tags span {
+    padding: 10px 10px;
+    background: #fff;
+    font-size: 14px;
+    margin: 0px 6px;
+    border-radius: 20px;
+}
+.tags-bar .rank p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 0px 10px;
+}
+
+.college-description .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 15px 0px 15px;
+}
+.college-description .wrapper .desc h3 {
+    margin: 0;
+    font-size: 18.5px;
+    line-height: 18px;
+}
+.college-description .wrapper .desc p.addr, .college-description .wrapper .desc p.addr2 {
+    margin: 15px 0px;
+    font-size: 12.5px;
+}
+.college-description .wrapper .desc p.addr span:last-child, p.addr2 {
+    color: #8c8989;
+}
+.desc2 .price span {
+    font-size: 11px;
+}
+.desc2 .price span:first-child {
+    text-decoration: line-through;
+}
+.desc2 .price span.off-tag {
+    overflow: hidden;
+    background: #dd1c26;
+    padding: 2px 4px 2px 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.desc2 .price span.off-tag:before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    position: absolute;
+    top: -14px;
+    left: -8px;
+    transform: rotate(45deg);
+}
+.desc2 .price span.off-tag:after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    position: absolute;
+    bottom: -14px;
+    left: -8px;
+    transform: rotate(-45deg);
+}
+.desc2 .price span.off-tag .dot {
+    height: 4px;
+    width: 4px;
+    background: #fff;
+    border-radius: 3px;
+    margin-right: 4px;
+}
+.desc2 .price span.off-tag span.val {
+    color: #fff;
+}
+.desc2 .price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.college-description .wrapper .desc2 {
+    width: 130px;
+}
+.college-description .wrapper .desc2 span.actual-price {
+    display: block;
+    font-size: 28.5px;
+    text-align: right;
+    line-height: 25px;
+    margin-top: 10px;
+    color: #dd1c26;
+    font-weight: 600;
+}
+.college-description .wrapper .desc2 span.det {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+p.addr2 span:first-child {
+    color: #37b396;
+    font-size: 13.5px;
+}
+.desc3 p.flat {
+    margin: 0px;
+    background: #ccf5e7;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 13.5px;
+    padding: 10px 20px 10px 15px;
+    line-height: 18px;
+}
+.desc3 p.flat span {
+    color: #37b396;
+}
+.desc3 p.flat span:last-child {
+    color: #1999d2;
+}
+.desc3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+p.cancle {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 18px;
+}
+p.cancle span {
+    color: #37b396;
+    position: relative;
+    padding-right: 4px;
+}
+p.cancle span.dot {
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 4px;
+    margin: 2px 4px;
+    background: #37b396;
+}
+p.cancle span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 3px;
+    margin: 6px -3px;
+    border-radius: 3px;
+    background: #37b396;
+    display: inline-block;
+}
+
+p.cancle span:first-child:before {
+    opacity: 0;
+}
